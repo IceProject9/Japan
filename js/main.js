@@ -7,6 +7,18 @@
             header.classList.remove('header__active')
         }
     };
-        
-    
+}());
+
+// BURGER HANDLER //
+
+(function () {
+    const burger = document.querySelector('.burger');
+    const menu = document.querySelector('.header__nav')
+    const close = document.querySelector('.header__nav-close')
+    burger.addEventListener('click', () => {
+        menu.classList.add('header__nav-active')
+    })
+    close.addEventListener('click', () => {
+        menu.classList.remove('header__nav-active');
+    })
 }());
